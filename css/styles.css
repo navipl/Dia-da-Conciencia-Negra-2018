@@ -1,0 +1,163 @@
+
+
+html, body, ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cont-principal{
+    width: 100vw;
+    height: 100vh;
+   
+
+    margin: 0px;
+    padding: 0px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.box-trasition {
+    grid-column:2/3;
+    grid-row: 1/2;
+
+    overflow: overlay;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    visibility: hidden;
+}
+
+.box-center {
+    width: 70%;
+    height: auto;
+}
+
+.ativo {
+    visibility: visible;
+}
+
+.box-center h1 {
+    color: #5b3c26;
+font-size: 2em;
+font-family: 'Coda', cursive;
+}
+
+.box-center h1 b {
+    color: #be8962;
+font-size: 0.5em;
+}
+
+.box-center p {
+    color: #5b3c26;
+font-size: 1em;
+font-family: 'Coda', cursive;
+}
+
+
+
+.botoes-laterais {
+    grid-column:1/2;
+    grid-row:1/2;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+
+    list-style: none;
+
+    align-self: baseline;
+
+    color: white;
+
+    padding: 2em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    left: -3px;
+
+    border-left: none;
+}
+
+.botoes-laterais li a{
+color: #FFFFFFFF;
+font-size: 1em;
+font-family: 'Coda', cursive;
+opacity: 0.6;
+text-decoration: none;
+
+}
+
+.botoes-laterais li {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.menu-lateral{
+    grid-column:1/2;
+    grid-row:1/2;
+    
+    display: grid;
+    grid-template-columns: auto;
+    z-index: 1;
+
+    background-color: rgba(91, 60, 38, 1);
+
+}
+
+.botoes-laterais li a:hover {
+    opacity: 1;
+}
+
+.botao-menu {
+    grid-column:1/2;
+    grid-row:1/2;
+    justify-self: center;
+    align-self: baseline;
+    width: 20px;
+    height: 3px;
+    background-color: #FFFFFFFF; 
+}
+
+.botao-menu::after{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #FFFFFFFF; 
+    margin: 2em;
+}
+
+@media screen and (max-width: 700px){
+    .cont-principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .menu-lateral{
+        grid-column:1/2;
+        grid-row:2/3;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .botoes-laterais {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .box-trasition{
+grid-column: 1/2;
+
+    }
+
+
+
+
+
