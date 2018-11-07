@@ -50,9 +50,10 @@ font-size: 0.5em;
 }
 
 .box-center p {
-    color: #5b3c26;
+color: #5b3c26;
 font-size: 1em;
 font-family: 'Coda', cursive;
+text-align: justify;
 }
 
 
@@ -61,7 +62,7 @@ font-family: 'Coda', cursive;
     grid-column:1/2;
     grid-row:1/2;
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 2em;
     grid-template-columns: auto;
     grid-auto-rows: auto;
     grid-auto-flow: row;
@@ -88,7 +89,25 @@ font-size: 1em;
 font-family: 'Coda', cursive;
 opacity: 0.6;
 text-decoration: none;
+}
 
+.box-center ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.box-center li a{
+    font-size: 1em;
+    font-family: 'Coda', cursive;
+    text-decoration: none;
+
+    color: rgba(91, 60, 38, 0.6);
+    text-align: justify;
+}
+
+.box-center li a:hover{
+    color: rgba(91, 60, 38, 1);
+    text-decoration: underline;
 }
 
 .botoes-laterais li {
@@ -132,6 +151,43 @@ text-decoration: none;
     background-color: #FFFFFFFF; 
     margin: 2em;
 }
+
+.box-moldal{
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(91, 60, 38, 0.6);
+
+    z-index: 10;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.cont-moldal {
+    background-color: #FFFFFFFF;
+    width: 60%;
+    height: 60%;
+    border: #5b3c26 solid 3px;
+    border-radius: 10px; 
+    padding: 20PX;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.btn-open {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    justify-self: right;
+}
+
+
 
 @media screen and (max-width: 700px){
     .cont-principal{
