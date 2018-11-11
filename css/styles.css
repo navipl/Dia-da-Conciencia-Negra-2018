@@ -96,6 +96,10 @@ text-decoration: none;
     margin-top: 10px;
 }
 
+.box-center li{
+    margin: 10px 0px;
+}
+
 .box-center li a{
     font-size: 1em;
     font-family: 'Coda', cursive;
@@ -128,6 +132,8 @@ text-decoration: none;
 
     background-color: rgba(91, 60, 38, 1);
 
+    box-shadow: 0px 0px 30px 5px #5b3c26;
+
 }
 
 .botoes-laterais li a:hover {
@@ -142,6 +148,7 @@ text-decoration: none;
     width: 20px;
     height: 3px;
     background-color: #FFFFFFFF; 
+
 }
 
 .botao-menu::after{
@@ -169,22 +176,44 @@ text-decoration: none;
 
 .cont-moldal {
     background-color: #FFFFFFFF;
-    width: 60%;
-    height: 60%;
+    width: 80vw;
+    height: 80vh;
     border: #5b3c26 solid 3px;
     border-radius: 10px; 
-    padding: 20PX;
+    padding: 10px;
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
 }
 
+.cont-moldal div{
+    margin: 10px;
+    overflow: overlay;
+    padding: 15px;
+    
+}
+
+.moldal-ativo{
+    visibility: visible;
+}
+
+.moldal-inativo{
+    visibility: hidden;
+}
+
 .btn-open {
-    background-color: red;
-    width: 40px;
-    height: 40px;
+    background-color: #FFFFFFFF;
+    width: 30px;
+    height: 30px;
     justify-self: right;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box-oculta {
+ display: none;
 }
 
 

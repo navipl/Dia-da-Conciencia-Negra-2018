@@ -21,10 +21,35 @@
 	<div id="Moldal" class="box-moldal moldal-inativo">
 		<div class="cont-moldal">
 			<div>
-				conteudo
+				<!--Nesta área vai o conteudo que deve ser exibido no moldal, 
+				esse conteudo serrá passado via JQue-->
 			</div>
 
-			<div class="btn-open"></div>
+			<button type="button" class="btn-open" onclick="ManipilaMoldal();">
+				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+				 y="0px" viewBox="0 0 415.188 415.188" style="enable-background:new 0 0 415.188 415.188; fill: #5b3c26;" xml:space="preserve">
+					<path d="M412.861,78.976c3.404-6.636,2.831-14.159-0.15-20.404c0.84-7.106-1.02-14.321-7.746-19.855
+				   c-6.262-5.151-12.523-10.305-18.781-15.457c-11.005-9.055-28.237-11.913-38.941,0c-48.619,54.103-99.461,105.856-152.167,155.725
+				   c-39.185-36.605-78.846-72.713-118.223-108.868c-13.82-12.693-33.824-8.71-42.519,6.411c-12.665,6.286-22.931,14.481-31.42,28.468
+				   c-4.042,6.664-3.727,15.076,0,21.764c25.421,45.578,74.557,85.651,114.957,122.529c-5.406,4.839-10.772,9.724-16.287,14.461
+				   c-54.43,46.742-91.144,76.399-23.029,124.325c0.919,0.647,1.856,0.504,2.789,0.882c1.305,0.602,2.557,1.026,4.004,1.264
+				   c0.45,0.017,0.87,0.093,1.313,0.058c1.402,0.114,2.774,0.471,4.195,0.192c36.621-7.18,70.677-35.878,101.576-67.48
+				   c30.1,29.669,62.151,58.013,97.395,74.831c8.391,4.005,18.395,1.671,24.855-3.931c10.832,0.818,20.708-5.913,25.665-15.586
+				   c0.734-0.454,1.207-0.713,2.002-1.21c15.748-9.838,17.187-29.431,5.534-42.936c-26.313-30.492-54.284-59.478-82.798-87.95
+				   C316.426,196.043,380.533,141.939,412.861,78.976z" />
+				</svg>
+
+				<!--<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+				 y="0px" viewBox="0 0 23.331 23.331" style="enable-background:new 0 0 23.331 23.331;" xml:space="preserve">
+					<g>
+						<path style="fill: #5b3c26;" d="M16.043,11.667L22.609,5.1c0.963-0.963,0.963-2.539,0-3.502l-0.875-0.875
+		c-0.963-0.964-2.539-0.964-3.502,0L11.666,7.29L5.099,0.723c-0.962-0.963-2.538-0.963-3.501,0L0.722,1.598
+		c-0.962,0.963-0.962,2.539,0,3.502l6.566,6.566l-6.566,6.567c-0.962,0.963-0.962,2.539,0,3.501l0.876,0.875
+		c0.963,0.963,2.539,0.963,3.501,0l6.567-6.565l6.566,6.565c0.963,0.963,2.539,0.963,3.502,0l0.875-0.875
+		c0.963-0.963,0.963-2.539,0-3.501L16.043,11.667z" />
+				</svg>-->
+
+			</button>
 		</div>
 
 	</div>
@@ -82,7 +107,7 @@
 
 			<div class="box-center">
 				<H1> <b>Quilombo</b> <br>
-					Ideias que Contrubuem para o desenvolvimento Tecnologico Quilombola</H1>
+					Idéias que Contribuem para o desenvolvimento Tecnológico Quilombola</H1>
 
 				<p>Devido as limitações encontradas em comunidades quilombolas o acesso a
 					tecnologia se torna limitado, por esse motivo ideias revolucionarias tendem
@@ -95,9 +120,248 @@
 				</p>
 
 				<ul>
-					<li><a href="">1 - Iniciativa: Vojo Brasil</a></li>
-					<li><a href="">2 - Informatização na Comunidade Quilombola</a></li>
-					<li><a href="">3 - Quilombolas do Vale do Ribeira</a></li>
+					<li><a href="#" onclick="ExibeMoldal('#Proj1');">1 - Iniciativa: Vojo Brasil</a>
+						<div id="Proj1" class="box-oculta">
+							<H2><b>Vojo Brasil </b><br>
+								Ampliando Vozes Quilombolas por Meio do Celular</H2>
+							<p>Conhecida por ser um dos pontos turísticos de Salvador (BA), a Ilha de Maré, a 5 quilômetros de São Tomé de
+								Paripe, subúrbio da capital, traz também a história africana enraizada em seu território, ocupado por nove
+								comunidades quilombolas. Os mais de cinco mil moradores têm no mar sua maior fonte de sustento. A maior parte
+								da população vive da pesca, do transporte marítimo, ou da coleta de mariscos, feita especialmente por mulheres
+								quilombolas, chamadas de marisqueiras.</p>
+							<h3>Sobre a tecnologia Vojo</h3>
+							<p>A tecnologia Vojo foi criada pelo projeto VozMob para ser utilizada por imigrantes da América Latina nos EUA
+								e, em parceria com o Instituto Mídia Étnica, foi testada pela primeira vez com trabalhadoras domésticas
+								brasileiras residentes em Boston.</p>
+							<p>Mesmo rodeada de indústrias, – petroleira e de portos -, a ilha ainda sofre pela falta de infraestrutura e
+								descaso por parte do poder público. Em vez de melhorias, essas organizações acabam poluindo ainda mais as
+								águas. Em alguns pontos, não existe sequer energia elétrica e o acesso à internet ainda não é uma realidade
+								para todos. A partir desse contexto, em agosto de 2013, o Instituto de Mídia Étnica (IME), em parceria com o
+								Center for Civic Media, do Massachusetts Institute of Technology (MIT- EUA), trouxe para a região a tecnologia
+								Vojo, que possibilita a transmissão de informações sem precisar acessar a internet ou estar conectado a
+								computadores.</p>
+							<img src="" alt="">
+							<p>A ferramenta permite que as pessoas enviem reportagens de áudio por meio de celulares ou telefones públicos
+								de forma gratuita, apenas com o cadastro em uma central, utilizando a tecnologia Voz sobre IP (VOIP, que
+								memoriza a voz humana em uma base de dados na internet). Cada áudio é diretamente registrado no portal do
+								projeto ou nas mídias sociais, como o Facebook.</p>
+							<h3>Instituto Mídia Étnica</h3>
+							<p>Com quase oito anos de atuação, o Instituto Mídia Étnica (IME) é uma organização social que desenvolve
+								projetos no campo da comunicação e diversidade e é responsável por diversos ações de comunicação comunitária e
+								jornalismo cidadão, como o <a href="www.correionago.com.br">portal Correio Nagô</a>.</p>
+							<p>As oficinas de formação duraram cerca de dois meses e contribuíram com a formação em comunicação de 20 jovens
+								quilombolas das comunidades de Bananeiras, Martelo, Porto dos Cavalos, Maracanã e Praia Grande, todas situadas
+								na ilha.</p>
+							<p>Os encontros falavam sobre o direito humano e democratização da comunicação, identidade negra, as questões de
+								gênero, direitos sexuais e reprodutivos e contavam também com oficinas sobre o jornalismo destinado à internet
+								e como realizar entrevistas utilizando o celular.</p>
+							<p>Com seus celulares, os participantes transmitiram informações acerca da cultura tradicional quilombola, assim
+								como denunciaram problemas encontrados em seu cotidiano.</p>
+							<img src="" alt="">
+							<p>Mas, desde o início, a aproximação do IME com os jovens das comunidades só foi possível por meio da liderança
+								quilombola local, que também elegeu quais seriam os participantes, no intuito de garantir que a tecnologia
+								fosse multiplicada para toda a região.</p>
+							<p>Atualmente, os jovens continuam utilizando a tecnologia e as práticas em comunicação que aprenderam para
+								falar sobre a Ilha de Maré.</p>
+							<h3>Principais Resultados</h3>
+							<p>Todos os jovens participantes da formação deram sequência à atividade e efetivamente vêm ensinando outros
+								jovens a fazerem uso das ferramentas. A comunidade têm acessado a produção dos educandos e alcançou um canal de
+								comunicação que efetivamente responde às características da cultura local.</p>
+							<p>A partir da ação de alguns jovens (veja o relato abaixo), a falta de transporte para escolas, problema social
+								local, que antes passava desapercebida, chamou a atenção da prefeitura da região, que voltou atrás de uma
+								decisão e retomou a política de mobilidade para os estudantes.</p>
+							<p>Atualmente, o objetivo do IME é ampliar a tecnologia a outros coletivos do país, como assentamentos ou
+								regiões periféricas, por meio de um número 0800, que permita a utilização do Vojo em qualquer lugar do Brasil.</p>
+							<h3>Quando a comunicação vira ferramenta de mobilização</h3>
+							<p>Fredson Santana de Bonfim, 20, está no segundo ano do ensino médio e é um dos jovens que receberam formação
+								para utilizar o Vojo. Para chegar até a escola, ele acorda todos os dias às 5h30, toma um barco às 6h, que vai
+								até o bairro de Cobalto, no município de Candeias (BA). De lá, ainda pega um ônibus para chegar à escola às 7h.</p>
+							<img src="" alt="">
+							<p>A trajetória de Fredson é uma realidade das meninas e meninos quilombolas da Ilha de Maré. Geograficamente
+								distantes dos outros municípios, eles dependem do barco para chegar à escola. Em 2013, porém, a Prefeitura
+								Municipal de Salvador deixou de disponibilizar o barco para a travessia para uma das comunidades da Ilha,
+								fazendo com que estudantes tivessem que pagar um real para ir e voltar do colégio.</p>
+							<p>Já sensibilizados pelas oficinas de comunicação e prontos para utilizar a tecnologia Vojo, os estudantes
+								retrataram o problema por meio de gravações e divulgaram em seus espaços na internet por meio dos celulares. A
+								partir dessa denúncia, a prefeitura voltou a disponibilizar os barcos.</p>
+							<p>Para Fredson, a maior parte das emissoras que chegam até o local, falam apenas dos elementos ruins que
+								compõem a comunidade, esquecendo-se dos pontos positivos e da cultura tradicional. Ele diz que, por meio da
+								ferramenta, é possível transmitir outro olhar sobre a Ilha e atrair novos turistas, colaborando com a economia
+								local. “Eu uso mais esse projeto pra fazer entrevistas sobre a realidade da minha comunidade; tudo que acontece
+								eu faço entrevistas, sejam coisas boas ou ruins”.</p>
+							<img src="" alt="">
+							<p>Para o diretor executivo do Instituto Mídia Étnica, Paulo Rogério Nunes, responsável por trazer a ferramenta
+								ao Brasil, um dos principais resultados é o empoderamento dos jovens na produção de conteúdo midiático sobre
+								sua própria comunidade, o que aumenta a autoestima, já que eles percebem que também são capazes de produzir
+								informação. “O direito à comunicação é fundamental e constitucional. Infelizmente, por questões econômicas e
+								sociais, a maior parte das comunidade periféricas não têm acesso e não têm como exercer esse direito, pois a
+								mídia é muito concentrada”.</p>
+							<p><b>Fonte: </b> <a href="https://educacaointegral.org.br/experiencias/programa-vojo-brasil-incentiva-jovens-quilombolas-a-falar-sobre-o-cotidiano-da-comunidade/">educacaointegral.org.br</a>
+							</p>
+						</div>
+					</li>
+
+					<li><a href="#" onclick="ExibeMoldal('#Proj2');">2 - Informatização na Comunidade Quilombola</a>
+						<div id="Proj2" class="box-oculta">
+							<H2><b>Implantação da </b><br>
+								Informatização na Comunidade Quilombola</H2>
+							<p>Em fevereiro de 2017, o Nupef implantou a primeira fase de construção de uma rede de comunicação na
+								comunidade quilombola do Bairro Novo, na cidade de Penalva, estado do Maranhão.</p>
+							<p>Penalva é uma cidade pobre, situada em uma região denominada "baixada maranhense". É uma área com muitos
+								conflitos e disputas entre fazendeiros e comunidades indígenas e quilombolas.</p>
+							<p>O projeto consiste basicamente na criação de redes autônomas e provedores comunitários em áreas de exclusão
+								social, para que estas comunidades possam ter acesso à internet com velocidade razoável e custo acessível. Ele
+								permite também, por exemplo, a criação de uma rede com serviços locais a partir de um servidor de conteúdo, ou
+								ainda a criação de uma rede de telefonia local, via voz sobre IP (VOIP), com capacidade de gerar ligações sem
+								custo entre os seus usuários e dentro do seu alcance.</p>
+							<img src="" alt="">
+							<p>O maior desafio agora é conseguir levar e estabelecer o link de internet para as áreas mais afastadas,
+								criando mais "nós" e conectando o Bairro Novo de Penalva ao Quilombo de Camaputiua (na zona rural), consolidar
+								o processo associativista e o empoderamento pela comunidade para garantir a autonomia, a expansão da rede e a
+								continuidade do projeto, garantindo sua manutenção. Entre as dificuldades estão a falta de disponibilidade do
+								serviço de acesso à internet e o preço alto, a falta de infraestrutura física para receber o link e o alto
+								custo de torres e antenas.</p>
+							<p>Os provedores comunitários não têm fins lucrativos e podem funcionar em pequena escala e em lugares estritos,
+								como bairros, quarteirões ou pequenos distritos, e são gerenciados pela população local, através de associações
+								de moradores ou outra instituição organizada que tenha legitimidade perante as comunidades no entorno.</p>
+							<img src="" alt="">
+							<p>Os objetivos do projeto são a democratização do acesso à informação, a promoção da educação e da cultura, o
+								fortalecimento da participação popular em processos que visam ao melhor controle social nos territórios. Neste
+								contexto, é possível também acompanhar a emergência de modelos econômicos autossustentáveis e a melhoria a
+								qualidade de vida das pessoas, principalmente nas áreas mais distantes das grandes cidades. Em última
+								instância, o projeto visa à redução das desigualdades no país.</p>
+							<p>A rede comunitária de Penalva partiu de uma demanda local somada à avaliação de que o Nupef poderia
+								contribuir com a sua construção no contexto do projeto Projeto Nupef de Redes Comunitárias. No âmbito deste
+								projeto, o Nupef financia e implanta a infraestrutura física da rede, promove atividades de formação e
+								desenvolvimento de capacidades, por vezes em parceria com outras entidades; desenvolve atividades de letramento
+								digital; apoia financeiramente por tempo determinado pessoas, grupos, organizações ou movimentos locais que
+								possam ser referências para a disseminação do conhecimento compartilhado; auxilia na criação das diretrizes
+								básicas da comunidade digital e do processo associativista; e acompanha o andamento do projeto e presta suporte
+								até que a comunidade tenha autonomia suficiente para levar o processo adiante. O projeto tem apoio da Ford
+								Foundation.</p>
+							<img src="" alt="">
+							<p>Desde sua fundação, o Nupef tem participado de diálogos específicos sobre redes comunitárias, publicado
+								textos sobre regulação, políticas e práticas de espectro escritos por especialistas nacionais e internacionais
+								em sua publicação poliTICs, e promovido oficinas sobre o espectro no Fórum Brasileiro de Internet e no IGF. Em
+								setembro de 2015, o Nupef participou de uma oficina de redes livres (utilizando tecnologia mesh) na favela Nova
+								Holanda, localizada no Complexo da Maré, no Rio de Janeiro. De lá pra cá, estudou melhor como construir as
+								redes na prática e, articulando-se com uma rede de atores de iniciativas semelhantes, buscou apoio que
+								permitisse ao Nupef implantar um projeto que juntava anos de experiência com redes do terceiro setor, criação
+								de telecentros, uso do espectro, construção de redes comunitárias e articulação da sociedade civil.</p>
+							<p>Segundo Paulo Duarte, coordenador de projetos do Nupef, é grande a satisfação de desenvolver o projeto:
+								quarenta dispositivos móveis conectados com poucos minutos de funcionamento da rede, sem qualquer divulgação,
+								demonstrou uma enorme demanda antes reprimida dessa população por conexão. São visíveis o entusiasmo, a
+								receptividade, o interesse e a grande adesão da comunidade.</p>
+							<p><b>Fonte: </b><a href="https://nupef.org.br/rede-comunit%C3%A1ria-MA">nupef.org.br</a></p>
+						</div>
+					</li>
+
+					<li><a href="#" onclick="ExibeMoldal('#Proj3');">3 - Quilombolas do Vale do Ribeira</a>
+						<div id="Proj3" class="box-oculta">
+							<H2><b>Quilombolas do Vale do Ribeira</b><br>
+								Têm Mais Acesso a Crédito e Tecnologia Após Reconhecimento</H2>
+							<p>Eles fazem pão, farinha e vêm melhorando a qualidade de vida das suas famílias. O Vale do Ribeira é um
+								importante reduto de descendentes de escravos.</p>
+							<p>Em uma comunidade do Vale do Ribeira, em São Paulo, a vida melhorou muito depois que os agricultores,
+								descendentes de escravos, foram reconhecidos oficialmente como quilombolas. Eles passaram a ter uma porção de
+								direitos, como acesso a crédito e assistência técnica, mas, acima de tudo, resgataram a própria identidade.</p>
+							<p>O Vale do Ribeira mantém uma das áreas mais preservadas da Mata Atlântica no Paraná e em São Paulo. É também
+								um importante reduto de descendentes de escravos. Das 33 áreas quilombolas reconhecidas em terras paulistas, 26
+								estão no Vale do Ribeira.</p>
+							<p>No caso da comunidade Peropava, localizada no município de Registro, o reconhecimento saiu em 2011, depois de
+								seis anos de estudos coordenados pelo Instituto de Terras do Estado de São Paulo. Os primeiros registros dessa
+								população de negros por lá datam de 1845.</p>
+							<p>De tudo o que eles produzem, a farinha de mandioca é talvez o alimento mais antigo. “É o sustento da família.
+								Sempre foi e tem que continuar sendo a farinha”, conta a quilombola Maria Regina da Silva Cabral. Maria Regina
+								e José Cabral fazem por volta de 300 quilos de farinha por semana.</p>
+							<p>Eles apontam as mudanças que vieram com a oficialização do quilombo. “A gente vivia com pouca renda, agora
+								melhorou a renda. Nós não tínhamos ônibus, íamos a pé para a cidade. Agora tem ônibus todo dia”, diz Maria
+								Regina. José Cabral completa: “nós morávamos em casa de sapê. Agora a casa é de alvenaria. Hoje tem móveis,
+								televisão, tem antena, cama.”.</p>
+							<p>Veio também a independência financeira. Até pouco tempo atrás, os produtos da comunidade eram trocados, como
+								num sistema de escambo. Agora, tudo virou mercadoria e tem preço.</p>
+							<p>O reconhecimento de ser quilombola deu à comunidade o acesso a recursos governamentais já disponíveis para
+								essa população. Foi assim com o programa estadual de Microbacias, que liberou R$ 400 mil para compra de
+								máquinas e equipamentos.</p>
+							<p>“O governo estadual reconhece aquela comunidade como sendo remanescente de quilombo e aí o dinheiro sai. Aí
+								tem condição daquela comunidade acessar o programa. Você tendo áreas produtivas, você aumenta a renda da
+								comunidade. Aí faz toda a diferença. Você insere grupos que estavam isolados no mercado, na economia”, explica
+								o agrônomo e diretor Regional da CATI Antônio Eduardo Sodrzeieski.</p>
+							<p>O quilombo Peropava foi reconhecido com uma área de 392 hectares e hoje moram 31 famílias. Cada uma delas tem
+								menos de um hectare para trabalhar. O restante ainda é de mata preservada. A presidente da associação Maria
+								Isidoro Alves diz que todas as mudanças que ocorreram só foram possíveis graças ao apoio e à iniciativa dos
+								técnicos que atendem a região.</p>
+							<p>Ao contrário de outros quilombos, o Peropava não se caracterizou por um lugar de refúgio dos escravos. “Com o
+								declínio da atividade agrícola, o patrão foi embora, abandonou a fazenda e eles tomaram conta. Não é um
+								quilombo de resistência, de negros fugidos. Eles ficaram porque foram abandonados pelo patrão”, explica o
+								agrônomo da CATI, que presta assistência técnica à comunidade, Rogério Sakai.</p>
+							<p>Antes do reconhecimento, a realidade da comunidade tinha a seguinte dinâmica: os homens só ganhavam a vida
+								como diaristas nas propriedades vizinhas e as mulheres ficavam em casa praticamente sem nenhuma renda. Isso sem
+								contar as famílias inteiras que foram embora atrás de trabalho. Hoje em dia, a situação vem mudando aos poucos
+								e algumas pessoas voltaram.</p>
+							<p>Enquanto a comunidade cresce junto, os quilombolas experimentam avanços na lida com suas lavouras. É que a
+								chegada da mecanização e de equipamentos a gasolina reduziu o esforço do trabalho manual.</p>
+							<p>A organização que a comunidade conseguiu no campo trouxe os quilombolas para a cidade. Cinco vezes por
+								semana, em cinco feiras diferentes, o pessoal coloca em prática um dos aprendizados mais importantes no
+								processo de independência financeira: a comercialização dos seus produtos.</p>
+							<p><b>Fonte: </b><a href="http://g1.globo.com/economia/agronegocios/globo-rural/noticia/2018/04/quilombolas-do-vale-do-ribeira-tem-mais-acesso-credito-e-tecnologia-apos-reconhecimento.html">g1.globo.com</a></p>
+						</div>
+					</li>
+
+					<li><a href="#" onclick="ExibeMoldal('#Proj4');">4 - Projeto Novas Tecnologias</a>
+						<div id="Proj4" class="box-oculta">
+							<H2><b>Quilombolas do Vale do Ribeira</b><br>
+								Têm Mais Acesso a Crédito e Tecnologia Após Reconhecimento</H2>
+							<p>Terminou na última segunda-feira, dia 25, a primeira etapa de formação de jovens quilombolas do Estado do
+								Pará nas ferramentas de pesquisa Google : ODK-Open Data Kit e Google Earth (Terra).</p>
+							<p>Ao todo, 34 jovens paraenses participaram durante três dias de oficinas formativas nas referidas ferramentas.
+								Os jovens quilombolas se dividiram em dois grupos: um específico para o curso de ODK, ferramenta que vêm sendo
+								utilizada principalmente para a coleta de dados socioeconômicos das comunidades quilombolas; e outro,
+								específico para o curso de Google Terra, a ferramenta que permite o mapeamento geoespacial e cultural das
+								comunidades quilombolas.</p>
+							<p>Os cursistas são representantes de comunidades quilombolas de diversas regiões do Pará, participaram jovens
+								da Regional do Marajó; Regional da Guajarina; Regional da Tocantina e Regional do Nordeste Paraense,
+								pertencentes a 29 comunidades diferentes.</p>
+							<figure>
+								<img src="" alt="">
+								<fieldset>
+									<p>Ana Léa, quilombola da comunidade de África e Laranjitiba e estudante de medicina na UFPA.</p>
+									<i>“A partir do mapeamento em Google Terra e ODK poderemos ter dados reais do que nosso povo necessita. Para
+										que nós possamos cobrar políticas públicas e ações afirmativas tendo bases reais sobre o que cada um de nós
+										necessitamos. Pois nós sabemos que nós não somos iguais, nós queremos ser tratados com equidade dentro das
+										nossas especificidades.”</i>
+								</fieldset>
+							</figure>
+							<figure>
+								<img src="" alt="">
+								<fieldset>
+									<p>Marinaldo Corrêa, quilombola da comunidade de Vila Vizânia-Marajuba.</p>
+									<i> “Eu estou aprendendo muitos conhecimentos e tecnologias que eu ainda não conhecia com este curso, está
+										sendo muito bom. Eu pretendo levar o que estou aprendendo para a minha comunidade, para ensinar os meninos
+										jovens e toda a associação de remanescentes de quilombos da minha comunidade”.</i>
+								</fieldset>
+							</figure>
+							<p>Além dos jovens, participaram da oficina lideranças nacionais da Conaq, como Ivo Fonseca, Givânia Maria da
+								Silva e José Carlos Galiza. Estas pessoas contaram a história da Conaq para os jovens e os motivaram a
+								continuar na luta quilombola, utilizando a tecnologia e os conhecimentos que podem ser levantados a partir das
+								ferramentas Google a favor dos quilombolas.</p>
+							<p>A oficina ainda contou com a participação de Gonzalo Pallardó, representante da Google, que contribuiu
+								contando a história do programa Google Solidário, ao qual o Novas Tecnologias se vincula, matando dúvidas dos
+								quilombolas em relação à gestão dos dados produzidos através do mapeamento em Google Terra e pesquisa em ODK,
+								além de ter auxiliado como especialista nas ferramentas junto a equipe da ECAM durante os três dias de
+								formação.</p>
+							<figure>
+								<img src="" alt="">
+								<fieldset>Turma do Programa Novas Tecnologias – Pará</fieldset>
+							</figure>
+							<p>Os jovens formados nesta primeira etapa já estão organizados para ir a campo capacitar outros jovens de suas
+								comunidades e iniciarem as pesquisas em seus territórios quilombolas.</p>
+							<p>O programa Novas Tecnologias é fruto de uma parceria entre a Equipe de Conservação da Amazônia- ECAM, a
+								Google e a Coordenação Nacional de Articulação das Comunidades Negras Rurais –CONAQ, contando com o apoio
+								financeiro da USAID- Agência dos Estados Unidos para o Desenvolvimento Internacional.</p>
+							<p><b>Fonte: </b><a href="http://conaq.org.br/noticias/a-formacao-do-projeto-novas-tecnologias-para-jovens-quilombolas-do-para-foi-um-sucesso/">conaq.org.br</a></p>
+						</div>
+					</li>
 				</ul>
 
 
