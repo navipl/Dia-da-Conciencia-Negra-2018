@@ -44,7 +44,7 @@ font-size: 2em;
 font-family: 'Coda', cursive;
 }
 
-.box-center h1 b {
+.box-center h1 b , .cont-moldal div h2 b{
     color: #be8962;
 font-size: 0.5em;
 }
@@ -100,7 +100,7 @@ text-decoration: none;
     margin: 10px 0px;
 }
 
-.box-center li a{
+.box-center li a, .cont-moldal p a{
     font-size: 1em;
     font-family: 'Coda', cursive;
     text-decoration: none;
@@ -109,7 +109,7 @@ text-decoration: none;
     text-align: justify;
 }
 
-.box-center li a:hover{
+.box-center li a:hover, .cont-moldal p a:hover{
     color: rgba(91, 60, 38, 1);
     text-decoration: underline;
 }
@@ -191,7 +191,20 @@ text-decoration: none;
     margin: 10px;
     overflow: overlay;
     padding: 15px;
-    
+    color: #5b3c26;
+    text-align: justify;
+    font-family: 'Coda', cursive;
+}
+
+.cont-moldal div h2{
+    text-align: left;
+}
+
+.cont-moldal div figure figcaption{
+font-size: 1em;
+color: #be8962;
+text-align: center;
+font-weight: bold;
 }
 
 .moldal-ativo{
@@ -215,6 +228,8 @@ text-decoration: none;
 .box-oculta {
  display: none;
 }
+
+
 
 
 
