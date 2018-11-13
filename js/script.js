@@ -5,16 +5,17 @@ function MostrarBox (d) {
 $(d).addClass("ativo");
 }
 
-function ManipilaMoldal(){
+function ManipulaMoldal(){
    $("#Moldal").toggleClass('moldal-ativo');
    $("#Moldal").toggleClass('moldal-inativo');
 }
 
 function ExibeMoldal(m){
+        var conteudo = $(m).html();
+
     $("#Moldal .cont-moldal div").empty();
 
-    var conteudo = $(m).html();
     $("#Moldal .cont-moldal div").append(conteudo);
 
-    ManipilaMoldal();
+    ManipulaMoldal();
 }
