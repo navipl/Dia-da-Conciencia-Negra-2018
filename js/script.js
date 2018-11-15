@@ -1,6 +1,9 @@
 
 
-function MostrarBox (d) {
+function MostrarBox (i,d) {
+$('.botoes-laterais').children().removeClass('menu-ativo');
+$(".botoes-laterais li:nth-child("+ i +")").addClass('menu-ativo');
+
     $('.cont-principal').children().removeClass('ativo');
 $(d).addClass("ativo");
 }
