@@ -268,10 +268,11 @@ margin: 30px 0px;
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    box-shadow: 0px 0px 0px 5px #5b3c26;
+    border: solid 5px #5b3c26;
 }
 
 .box-grade figure img:hover {
+    border: solid 5px rgba(91, 60, 38, 0);
     box-shadow: 0px 0px 10px 6px #5b3c26;
 }
 
@@ -342,7 +343,8 @@ margin: 30px 0px;
     }
 
     .topo-moldal img{
-        width: auto;
+        width: 35vw;
+        heigth: 35vw;
     }
 
     .box-grade{
