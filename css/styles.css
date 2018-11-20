@@ -323,7 +323,7 @@ margin: 30px 0px;
         grid-template-rows: auto;
 
         position: fixed;
-        bottom: 0.1vh;
+        bottom: 0vh;
         width: 100vw;
         height: auto;
     }
