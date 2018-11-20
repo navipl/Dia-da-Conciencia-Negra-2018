@@ -323,7 +323,7 @@ margin: 30px 0px;
         grid-template-rows: auto;
 
         position: fixed;
-        bottom: 0vh;
+        bottom: 0.1vh;
         width: 100vw;
         height: auto;
     }
@@ -331,6 +331,7 @@ margin: 30px 0px;
     .botoes-laterais {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
+        padding: 1em;
     }
 
     .box-trasition{
@@ -346,7 +347,7 @@ margin: 30px 0px;
         width: 100%;
     }
 
-    .topo-moldal img{
+    .topo-moldal img, .box-grade figure img{
         width: 35vw;
         height: 35vw;
     }
@@ -357,6 +358,8 @@ margin: 30px 0px;
 
     .box-center {
         width: 90%;
+        align-self: baseline;
+        padding-bottom: 55px;
 
     }
 
