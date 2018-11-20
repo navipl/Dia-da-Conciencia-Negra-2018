@@ -12,7 +12,9 @@ function ManipulaMoldal(){
    $("#Moldal").toggleClass('moldal-ativo');
    $("#Moldal").toggleClass('moldal-inativo');
 
-   $(".box-center").toggleClass('box-frozen');
+   $("#Cont-Inicio .box-center").toggleClass('box-frozen');
+   $("#Cont-Negros .box-center").toggleClass('box-frozen');
+   $("#Cont-Quilombo .box-center").toggleClass('box-frozen');
 }
 
 function ExibeMoldal(m){
