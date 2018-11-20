@@ -208,6 +208,7 @@ text-decoration: none;
     color: #5b3c26;
     text-align: justify;
     font-family: 'Coda', cursive;
+    padding: 0px 20px;
 }
 
 .cont-moldal .moldal-princiapl h2{
@@ -362,6 +363,11 @@ margin: 30px 0px;
         padding-bottom: 55px;
 
     }
+
+    .cont-moldal .moldal-princiapl{
+        padding: 0px;
+    }
+    
 
 }
 
