@@ -272,7 +272,6 @@ margin: 30px 0px;
 }
 
 .box-grade figure img:hover {
-    border: solid 5px rgba(91, 60, 38, 0);
     box-shadow: 0px 0px 10px 6px #5b3c26;
 }
 
@@ -306,7 +305,7 @@ margin: 30px 0px;
     margin: 0px;
     padding: 0px;
     border-radius: 100%;
-    box-shadow: 0px 0px 0px 5px #5b3c26;
+    border: solid 5px #5b3c26;
 }
 
 
@@ -322,6 +321,11 @@ margin: 30px 0px;
 
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+
+        position: fixed;
+        bottom: 1.5vh;
+        width: 100vw;
+        height: auto;
     }
 
     .botoes-laterais {
@@ -344,7 +348,7 @@ margin: 30px 0px;
 
     .topo-moldal img{
         width: 35vw;
-        heigth: 35vw;
+        height: 35vw;
     }
 
     .box-grade{
