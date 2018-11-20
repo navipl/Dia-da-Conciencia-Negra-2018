@@ -11,6 +11,8 @@ $(d).addClass("ativo");
 function ManipulaMoldal(){
    $("#Moldal").toggleClass('moldal-ativo');
    $("#Moldal").toggleClass('moldal-inativo');
+
+   $(".box-center").toggleClass('box-frozen');
 }
 
 function ExibeMoldal(m){
